@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             this.buttonClear = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textUPC = new System.Windows.Forms.TextBox();
+            this.textVendor = new System.Windows.Forms.TextBox();
+            this.textReorderQty = new System.Windows.Forms.TextBox();
+            this.textQtyoOrder = new System.Windows.Forms.TextBox();
+            this.textReorderPt = new System.Windows.Forms.TextBox();
+            this.textQTYoH = new System.Windows.Forms.TextBox();
             this.buttonPull = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.UPC = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textDesc = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonVendOpen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClear
@@ -55,49 +56,49 @@
             this.buttonClear.TabIndex = 0;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
-            this.buttonClear.Click += new System.EventHandler(this.button1_Click);
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
-            // textBox1
+            // textUPC
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.textUPC.Location = new System.Drawing.Point(88, 9);
+            this.textUPC.Name = "textUPC";
+            this.textUPC.Size = new System.Drawing.Size(100, 20);
+            this.textUPC.TabIndex = 1;
             // 
-            // textBox3
+            // textVendor
             // 
-            this.textBox3.Location = new System.Drawing.Point(88, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.textVendor.Location = new System.Drawing.Point(88, 199);
+            this.textVendor.Name = "textVendor";
+            this.textVendor.Size = new System.Drawing.Size(100, 20);
+            this.textVendor.TabIndex = 3;
             // 
-            // textBox4
+            // textReorderQty
             // 
-            this.textBox4.Location = new System.Drawing.Point(272, 173);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.textReorderQty.Location = new System.Drawing.Point(272, 173);
+            this.textReorderQty.Name = "textReorderQty";
+            this.textReorderQty.Size = new System.Drawing.Size(100, 20);
+            this.textReorderQty.TabIndex = 4;
             // 
-            // textBox5
+            // textQtyoOrder
             // 
-            this.textBox5.Location = new System.Drawing.Point(88, 173);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.textQtyoOrder.Location = new System.Drawing.Point(88, 173);
+            this.textQtyoOrder.Name = "textQtyoOrder";
+            this.textQtyoOrder.Size = new System.Drawing.Size(100, 20);
+            this.textQtyoOrder.TabIndex = 5;
             // 
-            // textBox6
+            // textReorderPt
             // 
-            this.textBox6.Location = new System.Drawing.Point(272, 147);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 6;
+            this.textReorderPt.Location = new System.Drawing.Point(272, 147);
+            this.textReorderPt.Name = "textReorderPt";
+            this.textReorderPt.Size = new System.Drawing.Size(100, 20);
+            this.textReorderPt.TabIndex = 6;
             // 
-            // textBox7
+            // textQTYoH
             // 
-            this.textBox7.Location = new System.Drawing.Point(88, 147);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 7;
+            this.textQTYoH.Location = new System.Drawing.Point(88, 147);
+            this.textQTYoH.Name = "textQTYoH";
+            this.textQTYoH.Size = new System.Drawing.Size(100, 20);
+            this.textQTYoH.TabIndex = 7;
             // 
             // buttonPull
             // 
@@ -107,6 +108,7 @@
             this.buttonPull.TabIndex = 8;
             this.buttonPull.Text = "Pull";
             this.buttonPull.UseVisualStyleBackColor = true;
+            this.buttonPull.Click += new System.EventHandler(this.buttonPull_Click);
             // 
             // buttonSave
             // 
@@ -126,13 +128,13 @@
             this.UPC.TabIndex = 11;
             this.UPC.Text = "UPC Code";
             // 
-            // richTextBox1
+            // textDesc
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(88, 35);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(284, 106);
-            this.richTextBox1.TabIndex = 12;
-            this.richTextBox1.Text = "";
+            this.textDesc.Location = new System.Drawing.Point(88, 35);
+            this.textDesc.Name = "textDesc";
+            this.textDesc.Size = new System.Drawing.Size(284, 106);
+            this.textDesc.TabIndex = 12;
+            this.textDesc.Text = "";
             // 
             // label1
             // 
@@ -188,27 +190,38 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Vendor";
             // 
+            // buttonVendOpen
+            // 
+            this.buttonVendOpen.Location = new System.Drawing.Point(12, 232);
+            this.buttonVendOpen.Name = "buttonVendOpen";
+            this.buttonVendOpen.Size = new System.Drawing.Size(75, 23);
+            this.buttonVendOpen.TabIndex = 19;
+            this.buttonVendOpen.Text = "Vendor";
+            this.buttonVendOpen.UseVisualStyleBackColor = true;
+            this.buttonVendOpen.Click += new System.EventHandler(this.buttonVendOpen_Click);
+            // 
             // InvMgmt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 296);
+            this.Controls.Add(this.buttonVendOpen);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.textDesc);
             this.Controls.Add(this.UPC);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonPull);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textQTYoH);
+            this.Controls.Add(this.textReorderPt);
+            this.Controls.Add(this.textQtyoOrder);
+            this.Controls.Add(this.textReorderQty);
+            this.Controls.Add(this.textVendor);
+            this.Controls.Add(this.textUPC);
             this.Controls.Add(this.buttonClear);
             this.Name = "InvMgmt";
             this.Text = "InvMgmt";
@@ -220,22 +233,23 @@
         #endregion
 
         private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textUPC;
+        private System.Windows.Forms.TextBox textVendor;
+        private System.Windows.Forms.TextBox textReorderQty;
+        private System.Windows.Forms.TextBox textQtyoOrder;
+        private System.Windows.Forms.TextBox textReorderPt;
+        private System.Windows.Forms.TextBox textQTYoH;
         private System.Windows.Forms.Button buttonPull;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label UPC;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox textDesc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonVendOpen;
     }
 }
 

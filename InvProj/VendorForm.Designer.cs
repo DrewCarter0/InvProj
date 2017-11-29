@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textVendor = new System.Windows.Forms.TextBox();
+            this.textPhone = new System.Windows.Forms.TextBox();
+            this.textAgtName = new System.Windows.Forms.TextBox();
+            this.textCoName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,33 +41,33 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textVendor
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.textVendor.Location = new System.Drawing.Point(103, 13);
+            this.textVendor.Name = "textVendor";
+            this.textVendor.Size = new System.Drawing.Size(100, 20);
+            this.textVendor.TabIndex = 0;
             // 
-            // textBox2
+            // textPhone
             // 
-            this.textBox2.Location = new System.Drawing.Point(314, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.textPhone.Location = new System.Drawing.Point(314, 39);
+            this.textPhone.Name = "textPhone";
+            this.textPhone.Size = new System.Drawing.Size(100, 20);
+            this.textPhone.TabIndex = 1;
             // 
-            // textBox3
+            // textAgtName
             // 
-            this.textBox3.Location = new System.Drawing.Point(314, 13);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.textAgtName.Location = new System.Drawing.Point(314, 13);
+            this.textAgtName.Name = "textAgtName";
+            this.textAgtName.Size = new System.Drawing.Size(100, 20);
+            this.textAgtName.TabIndex = 2;
             // 
-            // textBox4
+            // textCoName
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 39);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.textCoName.Location = new System.Drawing.Point(103, 39);
+            this.textCoName.Name = "textCoName";
+            this.textCoName.Size = new System.Drawing.Size(100, 20);
+            this.textCoName.TabIndex = 3;
             // 
             // label1
             // 
@@ -122,6 +122,7 @@
             this.buttonPull.TabIndex = 9;
             this.buttonPull.Text = "Pull";
             this.buttonPull.UseVisualStyleBackColor = true;
+            this.buttonPull.Click += new System.EventHandler(this.buttonPull_Click);
             // 
             // buttonClear
             // 
@@ -131,6 +132,7 @@
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // VendorForm
             // 
@@ -144,10 +146,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textCoName);
+            this.Controls.Add(this.textAgtName);
+            this.Controls.Add(this.textPhone);
+            this.Controls.Add(this.textVendor);
             this.Name = "VendorForm";
             this.Text = "VendorForm";
             this.ResumeLayout(false);
@@ -157,10 +159,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textVendor;
+        private System.Windows.Forms.TextBox textPhone;
+        private System.Windows.Forms.TextBox textAgtName;
+        private System.Windows.Forms.TextBox textCoName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
