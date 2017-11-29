@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Objects
+namespace InvProj
 {
     class InventoryItem
     {
@@ -32,6 +32,6 @@ namespace Objects
             quantityOnOrder = 0;
         }
 
-       
+
     }
 }

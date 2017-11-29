@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace InvProj
 {
-    public partial class InvMgmt : Form
+    public partial class VendorForm : Form
     {
-        public InvMgmt()
+        public VendorForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
